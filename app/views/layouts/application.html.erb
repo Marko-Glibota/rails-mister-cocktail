@@ -13,6 +13,15 @@
   </head>
 
   <body>
+    <div class="header">
+      <%= link_to cocktails_path do %>
+      <i class="fas fa-wine-bottle"></i>
+      <% end %>
+      <div class="menu">
+        <span><%= link_to "Our cocktails", cocktails_path%></span>
+        <span><%= link_to "Add a cocktail", new_cocktail_path%></span>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

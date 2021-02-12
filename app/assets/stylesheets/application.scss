@@ -1,3 +1,9 @@
+$gold: #CBB677;
+$plavo: #21345C;
+$purple: #CBCDD9;
+$grey: #E7E8EC;
+$white: #fff;
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
@@ -9,5 +15,79 @@
 @import "font-awesome";
 
 // Your CSS partials
+@import "components/buttons";
+@import "components/cards";
+@import "components/headers";
 @import "components/index";
 @import "pages/index";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700;900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+body {
+  background-color: $white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: $plavo;
+}
+
+.menu {
+  margin-right: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+.menu span:first-child a {
+  color: $white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.menu span:first-child a:hover {
+  opacity: 0.8;
+}
+
+.menu span:last-child a {
+    background-color: $plavo;
+    color: $gold;
+    border: solid 1px $gold;
+    border-radius: 3px;
+    padding: 8px 14px;
+  }
+
+  .menu span:last-child a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fa-wine-bottle {
+  color: $gold;
+  font-size: 42px;
+  margin-left: 22px;
+}
+
+.fa-trash-alt {
+  color: $plavo;
+  margin-left: 30px;
+  &:hover {
+    color: $gold;
+  }
+}
+
+.ingredient-list {
+  margin-bottom: 50px;
+}

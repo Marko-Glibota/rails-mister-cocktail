@@ -1,0 +1,25 @@
+.plavo-btn {
+  background-color: $plavo;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 12px;
+}
+
+.gold-btn {
+  color: $gold;
+  border: solid 1px $gold;
+  border-radius: 3px;
+  padding: 8px 14px;
+  &:hover {
+    opacity: 0.6;
+    color: $gold;
+    text-decoration: none;
+  }
+}
+
+.plavo-btn:hover {
+  opacity: 0.8;
+  color: $white;
+  text-decoration: none;
+}

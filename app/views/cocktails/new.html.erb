@@ -1,6 +1,8 @@
-<h1>Add a cocktail</h1>
+<div class="container">
+  <h1>Add a cocktail</h1>
 
-<%= simple_form_for @cocktail do |f| %>
-<%= f.input :name %>
-<%= f.submit "Create cocktail" %>
-<% end %>
+  <%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create cocktail", class: 'plavo-btn' %>
+  <% end %>
+</div>
