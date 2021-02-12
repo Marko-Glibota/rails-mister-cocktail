@@ -91,3 +91,14 @@ body {
 .ingredient-list {
   margin-bottom: 50px;
 }
+
+.cocktail-recipe {
+  display: flex;
+  align-items: center;
+}
+
+.cocktail-recipe img {
+  border-radius: 3px;
+  margin-left: 150px;
+}
+
